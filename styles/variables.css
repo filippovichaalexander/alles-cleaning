@@ -1,0 +1,47 @@
+:root {
+  --btn-background-green: #3498db;
+  --btn-background-cobalt-blue: #2ecc71;
+  --btn-background-cadmium-blue: #2ecc71;
+  --btn-background-red: #ecf0f1;
+  --btn-background-pink: #2c3e50;
+  --btn-background-purple: #2c3e50;
+  --btn-background-grey: #2c3e50;
+
+  --btn-wrapper-gradient-blue: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    #0092e4 100%
+  );
+  --btn-wrapper-gradient-green: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    #00e577 100%
+  );
+
+  --btn-height-bg: 115px;
+
+  --black: #000;
+  --white: #fff;
+
+  --btn-wrapper-padding: 5px;
+  --btn-padding-1: 12px 15px 17px 15px;
+  --btn-padding-2: 15px 20px;
+
+  --btn-box-shadow-blue: 0px 5px 10px 0px rgba(0, 160, 228, 0.5);
+
+  --border-radius-1-wrapper: 20px;
+  --border-radius-1-inner: 15px;
+
+  --border-1: 2px solid var(--black);
+
+  --text-uppercase: uppercase;
+
+  /* fonts */
+  --font-weight-black: 900;
+  --font-weight-bold: 700;
+  --font-weight-normal: 500;
+
+  --font-size-28: 28px;
+  --font-size-35: 35px;
+  --font-size-45: 45px;
+}
