@@ -157,45 +157,45 @@
   grid-template-columns: auto;
 } */
 .active-light-blue-child-down {
-  background: var(--btn-background-cobalt-blue);
+  background: var(--color-cobalt-blue);
   background-image: none;
 }
 .active-light-blue-child-up {
   background-image: url("../assets/images/btn-blue-light-md-bg.svg");
 }
 .active-dark-blue-child-down {
-  background: var(--btn-background-cadmium-blue);
+  background: var(--color-cadmium-blue);
   background-image: none;
 }
 .active-dark-blue-child-up {
   background-image: url("../assets/images/btn-blue-dark-md-bg.svg");
 }
 .active-pink-child-down {
-  background: var(--btn-background-pink);
+  background: var(--color-pink);
   background-image: none;
 }
 .active-pink-child-up {
   background-image: url("../assets/images/btn-pink-md-bg.svg");
 }
 .active-purple-child-down {
-  background: var(--btn-background-purple);
+  background: var(--color-purple);
   background-image: none;
 }
 .active-purple-child-up {
   background-image: url("../assets/images/btn-purple-md-bg.svg");
 }
 .active-red:active {
-  background-color: var(--btn-background-red);
+  background-color: var(--color-red);
 }
 .active-avocado-green-child-down {
-  background: var(--btn-background-avocado-green);
+  background: var(--color-avocado-green);
   background-image: none;
 }
 .active-avocado-green-child-up {
   background-image: url("../assets/images/btn-blue-light-md2-bg.svg");
 }
 .active-grass-green-child-down {
-  background: var(--btn-background-grass-green);
+  background: var(--color-grass-green);
   background-image: none;
 }
 .active-grass-green-child-up {
@@ -222,7 +222,7 @@
   height: 1000px;
 
   padding: 65px 59px 0px 25px;
-  color: var(--btn-background-cobalt-blue);
+  color: var(--color-cobalt-blue);
   text-transform: uppercase;
   font-size: 35px;
   font-style: normal;
