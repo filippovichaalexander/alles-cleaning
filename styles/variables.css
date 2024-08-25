@@ -1,11 +1,12 @@
 :root {
+  --btn-background-pink: #ff3f9b;
+  --btn-background-purple: #a038f1;
+  --btn-background-red: #ff0303;
+  --btn-background-avocado-green: #7fe409;
+  --btn-background-grass-green: #00e577;
   --btn-background-green: #3498db;
-  --btn-background-cobalt-blue: #2ecc71;
-  --btn-background-cadmium-blue: #2ecc71;
-  --btn-background-red: #ecf0f1;
-  --btn-background-pink: #2c3e50;
-  --btn-background-purple: #2c3e50;
-  --btn-background-grey: #2c3e50;
+  --btn-background-cobalt-blue: #3498db;
+  --btn-background-cadmium-blue: #1e5dff;
 
   --btn-wrapper-gradient-blue: linear-gradient(
     180deg,

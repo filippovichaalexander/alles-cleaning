@@ -156,37 +156,57 @@
   width: 1000px;
   grid-template-columns: auto;
 } */
-
-/* active class */
-.active-light-blue:active {
-  background-color: #0092e4;
+.active-light-blue-child-down {
+  background: var(--btn-background-cobalt-blue);
+  background-image: none;
 }
-.active-dark-blue:active {
-  background-color: #1e5dff;
+.active-light-blue-child-up {
+  background-image: url("../assets/images/btn-blue-light-md-bg.svg");
 }
-.active-pink:active {
-  background-color: #ff3f9b;
+.active-dark-blue-child-down {
+  background: var(--btn-background-cadmium-blue);
+  background-image: none;
 }
-.active-purple:active {
-  background-color: #a038f1;
+.active-dark-blue-child-up {
+  background-image: url("../assets/images/btn-blue-dark-md-bg.svg");
+}
+.active-pink-child-down {
+  background: var(--btn-background-pink);
+  background-image: none;
+}
+.active-pink-child-up {
+  background-image: url("../assets/images/btn-pink-md-bg.svg");
+}
+.active-purple-child-down {
+  background: var(--btn-background-purple);
+  background-image: none;
+}
+.active-purple-child-up {
+  background-image: url("../assets/images/btn-purple-md-bg.svg");
 }
 .active-red:active {
-  background-color: #ff0303;
+  background-color: var(--btn-background-red);
 }
-
-.active-avocado-green:active {
-  background-color: #7fe409;
+.active-avocado-green-child-down {
+  background: var(--btn-background-avocado-green);
+  background-image: none;
 }
-
-.active-grass-green:active {
-  background-color: #00e577;
+.active-avocado-green-child-up {
+  background-image: url("../assets/images/btn-blue-light-md2-bg.svg");
+}
+.active-grass-green-child-down {
+  background: var(--btn-background-grass-green);
+  background-image: none;
+}
+.active-grass-green-child-up {
+  background-image: url("../assets/images/btn-green-md-bg.svg");
 }
 .container {
   padding-left: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
 
-  background: #000;
+  background: var(--black);
 }
 .main {
   display: flex;
@@ -202,7 +222,7 @@
   height: 1000px;
 
   padding: 65px 59px 0px 25px;
-  color: #0092e4;
+  color: var(--btn-background-cobalt-blue);
   text-transform: uppercase;
   font-size: 35px;
   font-style: normal;
