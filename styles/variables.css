@@ -6,6 +6,7 @@
   --color-grass-green: #00e577;
   --color-cobalt-blue: #3498db;
   --color-cadmium-blue: #1e5dff;
+  --color-blue1: #0092e4;
   --color-grey: #8d8d8d;
   --color-grey-4: #2d2d2d;
   --color-yelloow: #ffeb3c;
@@ -44,6 +45,7 @@
   --font-weight-bold: 700;
   --font-weight-normal: 500;
 
+  --font-size-20: 20px;
   --font-size-25: 25px;
   --font-size-28: 28px;
   --font-size-30: 30px;

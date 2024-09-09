@@ -260,9 +260,9 @@ body * {
 .price__btn-top {
   height: 110px;
   width: 135px;
-  border-top: 5px solid rgba(141, 141, 141, 0.8);
-  border-right: 5px solid rgba(141, 141, 141, 0.8);
-  border-bottom: 5px solid rgba(141, 141, 141, 0.8);
+  border-top: 5px solid rgba(141, 141, 141, 0.5);
+  border-right: 5px solid rgba(141, 141, 141, 0.5);
+  border-bottom: 5px solid rgba(141, 141, 141, 0.5);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
@@ -275,9 +275,9 @@ body * {
 }
 .price__btn-bottom {
   position: relative;
-  height: 50px;
-  width: 128px;
-  background-color: rgba(141, 141, 141, 0.8);
+  height: 48.3px;
+  width: 124px;
+  background-color: rgba(141, 141, 141, 0.5);
 }
 .price__btn-bottom,
 .price__btn-bottom:before,
@@ -384,8 +384,102 @@ body * {
   height: 40%;
   background-color: var(--black);
 }
-/* Price btns */
+/* Footer */
+.footer {
+  max-width: 1440px;
+  height: 155px;
+  background: radial-gradient(
+    92.22% 100% at 52.5% 100%,
+    rgba(0, 185, 228, 0.7) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.consultant__btn {
+  position: relative;
+}
+.consultant__btn-img {
+  z-index: 30;
+}
+.consultant__btn-text {
+  z-index: 30;
+  font-size: var(--font-size-35);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+  text-transform: var(--text-uppercase);
+}
+.consultant__btn-top {
+  height: 115px;
+  width: 450px;
+  border-top: 5px solid rgba(141, 141, 141, 0.5);
+  border-right: 5px solid rgba(141, 141, 141, 0.5);
+  border-left: 5px solid rgba(141, 141, 141, 0.5);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+  z-index: 10;
+  box-sizing: border-box;
+  left: 41px;
+}
+.consultant__btn-bottom-wrapper {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+}
+.consultant__btn-bottom {
+  position: relative;
+  height: 106px;
+  width: 39.9px;
+  background-color: rgba(141, 141, 141, 0.5);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.consultant__btn-bottom {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.consultant__btn-layer {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  height: 111px;
+  width: 476px;
+  background-color: red;
+  /* clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); */
+  z-index: 11;
+  border-top-right-radius: 10px;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.consultant__btn-layer:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  height: 109px;
+  width: 470px;
+  background-color: var(--white);
+  /* clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%); */
+  z-index: 10;
+  border-top-right-radius: 8px;
+  /* clip-path: polygon(104% 0, 100% 0, 100% 100%, 0% 100%); */
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
 
+  /* background-image: url("../assets/images/price-bg-image.svg");
+  background-repeat: no-repeat;
+  background-position: 102% -8%, 10% 10%;
+  background-size: 112%; */
+}
+.consultant__btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 96px;
+  top: 37px;
+}
 .btn-type-single {
   width: 100%;
 }
@@ -562,13 +656,19 @@ body * {
   max-width: 1390px;
   padding-left: 50px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   background: var(--black);
 }
 .container {
   padding: 0 50px;
   background: var(--black);
+}
+.container-center {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: 0 auto;
+  /* background: var(--black); */
 }
 .main {
   display: flex;
@@ -587,13 +687,33 @@ body * {
 
   padding: 65px 59px 0px 25px;
 }
-.sidebra__item-title {
-  color: var(--color-cobalt-blue);
+.sidebar__item {
+  margin-bottom: 50px;
+  position: relative;
+}
+.sidebar__item:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 6px;
+  height: 120px;
+  background-color: var(--color-blue1);
+}
+.sidebar__item-title {
+  color: var(--color-blue1);
   text-transform: var(--text-uppercase);
-  font-size: 35px;
+  font-size: var(--font-size-35);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 20px;
+  max-width: 202px;
+}
+.sidebar__item-content {
+  color: var(--white);
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-normal);
 }
 @media screen and (max-width: 1080px) {
   .sidebar {
