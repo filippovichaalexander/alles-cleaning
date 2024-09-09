@@ -203,10 +203,14 @@ body * {
     rgba(255, 63, 155, 1) 0%,
     rgba(0, 0, 0, 1) 10%
   );
-
+}
+.price__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.price__date {
+  align-self: flex-start;
 }
 .price__btns {
   display: flex;
@@ -285,6 +289,7 @@ body * {
 .price__text-wrapper {
   /* background-image: url("../assets/images/price-title-img.svg"); */
   /* background-repeat: no-repeat; */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +312,7 @@ body * {
 }
 
 .date__btn-top {
-  height: 230px;
+  height: 265px;
   width: 155px;
   border-top: 5px solid rgba(141, 141, 141, 0.8);
   border-left: 5px solid rgba(141, 141, 141, 0.8);
@@ -323,7 +328,7 @@ body * {
   bottom: -72px;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   background-color: grey;
-  height: 50px;
+  height: 76px;
   width: 152px;
   right: 0px;
   height: 76px;
@@ -340,11 +345,11 @@ body * {
   position: absolute;
   top: 5px;
   right: 0px;
-  height: 292px;
+  height: 327px;
   width: 150px;
   background-color: red;
   /* clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%); */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 74%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77%);
   z-index: 12;
   border-top-left-radius: 10px;
 }
