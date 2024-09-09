@@ -1,6 +1,5 @@
 :root {
   --white: #fff;
-
 }
 @font-face {
   font-family: "Plumb";
@@ -112,13 +111,13 @@ body * {
   /* background: url("../assets/images/adds-image.svg") no-repeat / cover; */
   background-image: url("../assets/images/adds-image.svg");
   background-color: #000;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   /* position: relative; */
-  
 }
 .adds__title {
   color: var(--white);
@@ -133,18 +132,22 @@ body * {
   position: relative;
 }
 .adds__title-line::after {
-  content: '';
-  background-color: red;
-  background: linear-gradient(272deg, rgba(12, 26, 148, 0.40) 9.46%, rgba(95, 219, 193, 0.40) 84.12%);
+  content: "";
+  /* background-color: red; */
+  background: linear-gradient(
+    272deg,
+    rgba(12, 26, 148, 0.4) 9.46%,
+    rgba(95, 219, 193, 0.4) 84.12%
+  );
   opacity: 0.8;
   border-radius: 120px;
   position: absolute;
   left: 0;
   right: 0;
   top: -50%;
-  transform: translate(-16%, 0);
+  transform: translate(-13%, 0);
   height: 180px;
-  width: 1000px;
+  width: 960px;
 }
 .adds__icon-thumb1-wrapper,
 .adds__icon-thumb2-wrapper {
@@ -153,20 +156,25 @@ body * {
   height: 115px;
   border-radius: 50%;
   opacity: 0.8;
-  background: var(--color-purple);
   background-blend-mode: multiply;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.adds__icon-thumb1-wrapper {
+  background: rgba(71, 45, 130, 0.8);
+}
+.adds__icon-thumb2-wrapper {
+  background: rgba(65, 14, 68, 0.8);
+}
 
 .adds__icon-thumb1-wrapper {
   left: 366px;
-  bottom: -231px;
+  bottom: -162px;
 }
 .adds__icon-thumb2-wrapper {
-  right: 200px;
-  top: 200px;
+  right: 231px;
+  top: 187px;
 }
 .adds__icon-thumb-inner {
   position: relative;
@@ -176,14 +184,116 @@ body * {
   position: absolute;
 }
 .adds__icon-thumb1 {
-  left: 50%;
-  top: 50;
+  left: 0px;
+  top: -12px;
   transform: translate(-50%, -50%);
 }
 .adds__icon-thumb2 {
-  right: 50%;
+  right: -46px;
+  top: -46px;
+  /* transform: translate(50%, -50%); */
+}
+/* Price */
+.price {
+  height: 430px;
+  background: radial-gradient(
+    circle at 0 50%,
+    rgba(255, 63, 155, 1) 0%,
+    rgba(0, 0, 0, 1) 10%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.price__btn {
+  position: relative;
+}
+.price__btn-top {
+  height: 110px;
+  width: 135px;
+  border-top: 5px solid rgba(141, 141, 141, 0.8);
+  border-right: 5px solid rgba(141, 141, 141, 0.8);
+  border-bottom: 5px solid rgba(141, 141, 141, 0.8);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.price__btn-top:before {
+  height: 110px;
+  width: 133px;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  background-color: transparent;
+
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.price__btn-bottom-wrapper {
+  position: absolute;
+  bottom: -48px;
+}
+.price__btn-bottom {
+  position: relative;
+  height: 50px;
+  width: 135px;
+  background-color: rgba(141, 141, 141, 0.8);
+}
+.price__btn-bottom:after {
+  height: 50px;
+  width: 135px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-color: transparent;
+}
+/* .price__btn-bottom:before {
+  height: 50px;
+  width: 135px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+} */
+.price__btn-bottom,
+.price__btn-bottom:before,
+.price__btn-bottom:after {
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.price__btn-layer {
+  position: absolute;
+  top: 7px;
+  left: -7px;
+  height: 155px;
+  width: 135px;
+  background-color: green;
+  clip-path: polygon(0 0, 100% 0, 100% 63%, 0% 100%);
+  z-index: 10;
+}
+.price__btn-img {
+  position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+}
+/* Gap */
+.gap-large {
+  height: 40%;
+  background-color: var(--black);
+}
+/* Price btns */
+.btn-exchange {
 }
 .btn-type-single {
   width: 100%;
