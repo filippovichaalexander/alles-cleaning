@@ -387,7 +387,7 @@ body * {
 /* Footer */
 .footer {
   max-width: 1440px;
-  height: 155px;
+  height: 121px;
   background: radial-gradient(
     92.22% 100% at 52.5% 100%,
     rgba(0, 185, 228, 0.7) 0%,
@@ -401,6 +401,10 @@ body * {
 }
 .consultant__btn {
   position: relative;
+}
+.consultant__btn-wrapper {
+  position: absolute;
+  left: 0;
 }
 .consultant__btn-img {
   z-index: 30;
@@ -446,7 +450,7 @@ body * {
   left: 10px;
   height: 111px;
   width: 476px;
-  background-color: red;
+  background-color: var(--black);
   /* clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); */
   z-index: 11;
   border-top-right-radius: 10px;
@@ -456,10 +460,14 @@ body * {
   content: "";
   position: absolute;
   top: 2px;
-  left: 3px;
+  left: 1px;
   height: 109px;
-  width: 470px;
+  width: 473px;
   background-color: var(--white);
+  background-image: url("../assets/images/cons-btn-img.svg");
+  background-repeat: no-repeat;
+  background-position: 102% -8%, 10% 10%;
+  background-size: 39%;
   /* clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%); */
   z-index: 10;
   border-top-right-radius: 8px;
@@ -478,8 +486,98 @@ body * {
   gap: 10px;
   position: absolute;
   left: 96px;
-  top: 37px;
+  top: 41px;
 }
+
+.stop__btn {
+  position: relative;
+}
+.stop__btn-wrapper {
+  position: absolute;
+  right: 838px;
+}
+.stop__btn-img {
+  z-index: 30;
+}
+.stop__btn-text {
+  min-width: 200px;
+  z-index: 30;
+  font-size: var(--font-size-35);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+  text-transform: var(--text-uppercase);
+  text-align: left;
+}
+.stop__btn-text-bottom {
+  z-index: 20;
+}
+.stop__btn-top {
+  height: 115px;
+  width: 793px;
+  border-top: 5px solid rgba(141, 141, 141, 0.5);
+  border-right: 5px solid rgba(141, 141, 141, 0.5);
+  border-left: 5px solid rgba(141, 141, 141, 0.5);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+  z-index: 10;
+  box-sizing: border-box;
+  left: 41px;
+}
+.stop__btn-bottom-wrapper {
+  position: absolute;
+  top: 12px;
+  left: 2px;
+}
+.stop__btn-bottom {
+  position: relative;
+  height: 106px;
+  width: 39.9px;
+  background-color: rgba(141, 141, 141, 0.5);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.stop__btn-bottom {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.stop__btn-layer {
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  height: 111px;
+  width: 820px;
+  background-color: var(--black);
+  /* clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); */
+  z-index: 11;
+  border-top-right-radius: 10px;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.stop__btn-layer:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 109px;
+  width: 816px;
+  background-color: var(--white);
+  background-color: var(--white);
+  background-image: url("../assets/images/stop-btn-img.svg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 101% 7%, 11% 10%;
+  z-index: 10;
+  border-top-right-radius: 8px;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.stop__btn-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  left: 355px;
+  top: 27px;
+}
+
 .btn-type-single {
   width: 100%;
 }
@@ -722,5 +820,59 @@ body * {
   .container-main {
     padding: 30px 40px;
     margin: 0 auto;
+  }
+  .adds {
+    display: none;
+  }
+  .price__text-img {
+    width: 162%;
+  }
+  .stop__btn-top {
+    width: 616px;
+    left: 32px;
+  }
+  .stop__btn-wrapper {
+    right: 638px;
+  }
+  .stop__btn-bottom {
+    width: 29.9px;
+  }
+  .stop__btn-bottom-wrapper {
+    left: 2px;
+  }
+  .stop__btn-layer {
+    top: 4px;
+    left: 9px;
+    width: 634px;
+  }
+  .stop__btn-layer:after {
+    left: 2px;
+    width: 629px;
+    clip-path: polygon(5.1% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .stop__btn-content {
+    left: 180px;
+  }
+  .consultant__btn-wrapper {
+    left: -37px;
+  }
+  .consultant__btn-bottom-wrapper {
+    top: 14px;
+    left: 4px;
+  }
+  .consultant__btn-bottom {
+    clip-path: polygon(64% 0, 0% 100%, 100% 100%);
+  }
+  .consultant__btn-layer {
+    width: 348px;
+  }
+  .consultant__btn-layer:after {
+    width: 345px;
+    background-position: 113% 99%, 10% 10%;
+    background-size: 54%;
+  }
+  .consultant__btn-top {
+    width: 334px;
+    left: 30.3px;
   }
 }
