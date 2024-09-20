@@ -239,6 +239,7 @@ body * {
   );
   position: relative;
 }
+
 .price__inner {
   display: flex;
   justify-content: space-between;
@@ -247,17 +248,27 @@ body * {
   padding-top: 60px;
 }
 .price__date {
+  position: relative;
   align-self: center;
   width: 156px;
+  height: 312px;
+  background-image: url("../assets/images/Backgr_time.svg");
 }
+.btn__price {
+  display: none;
+  position: absolute;
+  top: 153px;
+  right: 0;
+  width: 135px;
+  height: 150px;
+  background-image: url("../assets/images/Btn_price.svg");
+}
+
 .price__date-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 32%;
-  transform: translate(-50%, -50%);
+  padding: 70px 3px 127px 25px;
   z-index: 20;
   text-align: justify;
 }
@@ -274,10 +285,11 @@ body * {
 }
 
 .price__btns {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
+  gap: 12px;
 }
 .price__btn {
   position: relative;
@@ -346,6 +358,16 @@ body * {
   background-repeat: no-repeat;
   background-position: 102% -8%, 10% 10%;
   background-size: 112%;
+}
+.btn__exchange {
+  width: 135px;
+  height: 150px;
+  background-image: url("../assets/images/Btn_change.svg");
+}
+.btn__check {
+  width: 135px;
+  height: 150px;
+  background-image: url("../assets/images/Btn_check.svg");
 }
 .price__text-wrapper {
   /* background-image: url("../assets/images/price-title-img.svg"); */
@@ -600,7 +622,11 @@ clip-path: polygon(0% 0, 100% 100%, 0% 100%); */
   left: 96px;
   top: 41px;
 }
-
+.btn__consultant {
+  width: 490px;
+  height: 120px;
+  background-image: url("../assets/images/Btn_help32.svg");
+}
 .stop__btn {
   position: relative;
 }
@@ -688,6 +714,11 @@ clip-path: polygon(0% 0, 100% 100%, 0% 100%); */
   position: absolute;
   left: 355px;
   top: 27px;
+}
+.btn__time {
+  width: 820px;
+  height: 120px;
+  background-image: url("../assets/images/Btn_stop32.svg");
 }
 
 .btn-type-single {
@@ -1020,11 +1051,42 @@ clip-path: polygon(0% 0, 100% 100%, 0% 100%); */
   .check__btn {
     top: 313px;
   }
-  .price__date {
+  /* .price__date {
     align-self: baseline;
     padding-top: 15px;
+  } */
+  .container-center {
+    padding: 0 40px;
   }
   .contacts {
     display: block;
+  }
+
+  .price__date-content {
+    padding: 25px 3px 124px 25px;
+  }
+  .price__date {
+    top: -24px;
+    width: 155px;
+    height: 258px;
+    background-image: url("../assets/images/Panel_time-tab.svg");
+  }
+  .btn__price {
+    display: block;
+  }
+  .price__date-time {
+    color: var(--color-avocado-green);
+  }
+  .btn__consultant {
+    margin-left: -32px;
+    width: 370px;
+    height: 120px;
+    background-image: url("../assets/images/btn__help_tab.svg");
+  }
+  .btn__time {
+    width: 640px;
+    height: 120px;
+    background-image: url("../assets/images/Btn_stop-tab.svg");
+    background-size: cover;
   }
 }
