@@ -334,8 +334,9 @@ body * {
   width: 100%;
 }
 .btn-type-double {
-  width: 490px;
+  /* min-width: 490px; */
   display: flex;
+  flex: auto;
   align-items: center;
   height: var(--btn-height-bg);
   padding: var(--btn-wrapper-padding);
@@ -357,7 +358,7 @@ body * {
 }
 /* Программы мойки */
 .btn-wrapper {
-  width: 490px;
+  /* min-width: 490px; */
   height: var(--btn-height-bg);
   display: inline-block;
   padding: var(--btn-wrapper-padding);
@@ -378,8 +379,11 @@ body * {
     rgba(0, 160, 228, 1) 100%
   );
 }
-.btn-row-double:nth-child(1) {
-  margin-right: 20px;
+.btn-row-2-items {
+  width: 50%;
+}
+.btn-row-2-items:nth-child(2) {
+  margin-left: 20px;
 }
 .program-btn {
   height: 100%;
@@ -442,7 +446,7 @@ body * {
 }
 .row {
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -511,20 +515,20 @@ body * {
 }
 .main {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 /* Sidebar */
 .sidebar {
   display: block;
   margin-left: 30px;
-  width: 360px;
+  /* width: 360px; */
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background: #454242;
-  height: 1077px;
+  height: 1077px; */
   background-image: url("../assets/images/sidebar-bg.svg;");
 
-  padding: 65px 59px 0px 25px;
+  padding: 65px 59px 0px 25px; 
 }
 .sidebar__item {
   margin-bottom: 50px;
@@ -542,12 +546,12 @@ body * {
 .sidebar__item-title {
   color: var(--color-blue1);
   text-transform: var(--text-uppercase);
-  font-size: var(--font-size-35);
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 20px;
-  max-width: 202px;
+  /* margin-bottom: 20px; */
+  /* max-width: 202px; */
 }
 .sidebar__item-content {
   color: var(--white);
@@ -557,12 +561,24 @@ body * {
 .gap-large {
   display: block;
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1439px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
   .gap-large {
     display: none;
   }
-  .sidebar {
+  /* .sidebar {
     display: none;
+  } */
+  .programs {
+    width: 100%;
+  }
+  .main {
+    display: block;
   }
   .container-main {
     padding: 73px 40px 30px 40px;
