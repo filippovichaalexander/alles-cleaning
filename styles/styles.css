@@ -24,7 +24,9 @@ body * {
   font-family: "Plumb", sans-serif;
   font-style: normal;
   line-height: normal;
+  box-sizing: border-box;
   /* color: var(--black); */
+  /* background: var(--black); */
 }
 /* grid, flex */
 .flex-center {
@@ -35,12 +37,11 @@ body * {
 /* header */
 .header {
   max-width: 1440px;
-  background: radial-gradient(
-    307.2% 150.12% at 72.36% 100%,
-    #00252e 0%,
-    #000 100%
-  );
+  background: rgb(61,19,19);
+  background-image: linear-gradient(90deg, rgba(61,19,19,1) 0%, rgba(0,0,0,1) 29%, rgba(27,40,73,1) 73%, rgba(0,0,0,1) 100%);
 }
+/* background: rgb(27,40,73); */
+/* background: linear-gradient(90deg, rgba(27,40,73,1) 41%, rgba(0,0,0,1) 100%); */
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -106,6 +107,12 @@ body * {
   font-weight: var(--font-weight-bold);
   color: var(--color-cobalt-blue);
 }
+.header__logo.logo--desktop {
+  display: block;
+} 
+.header__logo.logo--mobile {
+  display: none;
+} 
 /* Contacts */
 .contacts {
   display: none;
@@ -239,11 +246,20 @@ body * {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0;
+  bottom: -30px;
   -webkit-transform: translate(-50%);
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   -o-transform: translate(-50%);
+}
+.price__text-img.price__text-img--desktop {
+  display: block;
+}
+
+.price__text-img.price__text-img--mobile {
+  display: none;
+  width: 155%;
+  bottom: -36px;
 }
 .price__text {
   color: var(--white);
@@ -357,6 +373,9 @@ body * {
   box-shadow: var(--btn-box-shadow-green);
 }
 /* Программы мойки */
+.programs {
+  width: 94%;
+}
 .btn-wrapper {
   /* min-width: 490px; */
   height: var(--btn-height-bg);
@@ -368,19 +387,22 @@ body * {
 .btn-wrapper--green {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.6) 0%,
+    rgba(140, 140, 140, 0.35) 0%,
     rgba(0, 229, 119, 1) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 229, 119, 0.6);
 }
 .btn-wrapper--blue {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.6) 0%,
+    rgba(140, 140, 140, 0.35) 0%, 
     rgba(0, 160, 228, 1) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 160, 228, 0.50);
 }
 .btn-row-2-items {
   width: 50%;
+  min-width: calc(50% - 20px);
 }
 .btn-row-2-items:nth-child(2) {
   margin-left: 20px;
@@ -390,7 +412,7 @@ body * {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 101% center;
   background-size: auto 100%;
   border: var(--border-1);
   border-radius: var(--border-radius-1-inner);
@@ -432,7 +454,7 @@ body * {
   gap: 3px;
 }
 .btn__main-text {
-  font-size: var(--font-size-45);
+  font-size: 45px;
   font-weight: var(--font-weight-bold);
   text-transform: var(--text-uppercase);
 }
@@ -479,9 +501,9 @@ body * {
 .active-purple-child-up {
   background-image: url("../assets/images/btn-purple-md-bg.svg");
 }
-.active-red:active {
+/* .active-red:active {
   background-color: var(--color-red);
-}
+} */
 .active-avocado-green-child-down {
   background: var(--color-avocado-green);
   background-image: none;
@@ -496,18 +518,26 @@ body * {
 .active-grass-green-child-up {
   background-image: url("../assets/images/btn-green-md-bg.svg");
 }
+.active-red-child-down {
+  background: var(--color-red);
+  background-image: none;
+}
+.active-red-child-up {
+  background-image: url("../assets/images/btn-blue-light-md2-bg.svg");
+}
+.container {
+  padding: 0 50px;
+  
+}
 .container-main {
-  max-width: 1390px;
+  max-width: 1440px;
   padding-left: 50px;
   padding-top: 30px;
   /* padding-bottom: 30px; */
 
   background: var(--black);
 }
-.container {
-  padding: 0 50px;
-  background: var(--black);
-}
+
 .container-center {
   max-width: 1440px;
   padding: 0 50px;
@@ -521,11 +551,11 @@ body * {
 .sidebar {
   display: block;
   margin-left: 30px;
-  /* width: 360px; */
+  width: 360px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background: #454242;
-  height: 1077px; */
+  height: 1063px; */
   background-image: url("../assets/images/sidebar-bg.svg;");
 
   padding: 65px 59px 0px 25px; 
@@ -574,6 +604,13 @@ body * {
   /* .sidebar {
     display: none;
   } */
+   
+.header__logo.logo--desktop {
+  display: none;
+} 
+.header__logo.logo--mobile {
+  display: block;
+} 
   .programs {
     width: 100%;
   }
@@ -654,5 +691,12 @@ body * {
   }
   .btn__time:active {
     background-image: url("../assets/images/Btn_stop_tab_active.svg");
+  }
+  .price__text-img.price__text-img--desktop {
+    display: none;
+  }
+  
+  .price__text-img.price__text-img--mobile {
+    display: block;
   }
 }

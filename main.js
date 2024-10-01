@@ -80,6 +80,13 @@ handleColorChange(
   "active-grass-green-child-down",
   "active-grass-child-child-up"
 );
+handleColorChange(
+  "active-red",
+  "#FF0303",
+  "rgba(0, 160, 228, 1)",
+  "active-red-child-down",
+  "active-red-child-up"
+);
 
 function displayScreenSize() {
   const width = window.innerWidth;
