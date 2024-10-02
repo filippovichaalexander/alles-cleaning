@@ -88,19 +88,19 @@ handleColorChange(
   "active-red-child-up"
 );
 
-function displayScreenSize() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const screenSizeDiv = document.getElementById("screenSize");
-  screenSizeDiv.textContent = `Ширина: ${width}px, Высота: ${height}px`;
+// function displayScreenSize() {
+//   const width = window.innerWidth;
+//   const height = window.innerHeight;
+//   const screenSizeDiv = document.getElementById("screenSize");
+//   screenSizeDiv.textContent = `Ширина: ${width}px, Высота: ${height}px`;
 
-  // Пример условий для медиазапросов
-  if (width <= 1080) {
-    console.log("Экран меньше или равен 1080px");
-  } else {
-    console.log("Экран больше 1080px");
-  }
-}
+//   // Пример условий для медиазапросов
+//   if (width <= 1080) {
+//     console.log("Экран меньше или равен 1080px");
+//   } else {
+//     console.log("Экран больше 1080px");
+//   }
+// }
 
 // Выводим размеры экрана при загрузке
 displayScreenSize();

@@ -333,6 +333,7 @@ body * {
   width: 490px;
   height: 120px;
   background-image: url("../assets/images/Btn_help32.svg");
+  background-repeat: no-repeat;
 }
 .btn__consultant:active {
   background-image: url("../assets/images/Btn_help-desktop-active.svg");
