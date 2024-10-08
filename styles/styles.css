@@ -602,9 +602,9 @@ body * {
   .gap-large {
     display: none;
   }
-  /* .sidebar {
+  .sidebar {
     display: none;
-  } */
+  }
    
 .header__logo.logo--desktop {
   display: none;
