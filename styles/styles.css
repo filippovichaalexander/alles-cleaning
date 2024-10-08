@@ -592,13 +592,13 @@ body * {
 .gap-large {
   display: block;
 }
-@media screen and (max-width: 1439px) {
+/* @media screen and (max-width: 1439px) {
   .sidebar {
     display: none;
   }
-}
+} */
 
-@media screen and (max-width: 1080px) {
+@media (device-diagonal < 22in) {
   .sidebar {
     display: none;
   }
