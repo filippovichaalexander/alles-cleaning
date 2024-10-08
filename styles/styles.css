@@ -598,7 +598,7 @@ body * {
   }
 } */
 
-@media screen and (max-resolution: 2dppx), (max-resolution: 288dpi)  {
+@media screen and (max-resolution: 2016dppx), (max-resolution: 2016dpi)  {
   .sidebar {
     display: none;
   }
