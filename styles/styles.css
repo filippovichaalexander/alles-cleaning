@@ -38,7 +38,7 @@ body * {
 .header {
   max-width: 1440px;
   background: rgb(61,19,19);
-  background-image: linear-gradient(90deg, rgba(61,19,19,1) 0%, rgba(0,0,0,1) 29%, rgba(27,40,73,1) 73%, rgba(0,0,0,1) 100%);
+  background-image: linear-gradient(90deg,  rgba(0,0,0,1) 29%, rgb(22, 41, 59) 73%, rgba(0,0,0,1) 100%);
 }
 /* background: rgb(27,40,73); */
 /* background: linear-gradient(90deg, rgba(27,40,73,1) 41%, rgba(0,0,0,1) 100%); */
