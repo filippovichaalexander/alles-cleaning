@@ -598,7 +598,7 @@ body * {
   }
 } */
 
-@media (device-diagonal < 22in) {
+@media screen and (max-resolution: 2dppx), (max-resolution: 288dpi)  {
   .sidebar {
     display: none;
   }
