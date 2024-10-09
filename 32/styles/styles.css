@@ -610,8 +610,18 @@ body * {
   display: none;
 }
 @media screen and (max-width: 1080px) {
+  .container {
+    padding: 0 37px;
+  }
+  .container-center {
+    padding: 0 37px;
+  }
   .header {
     max-width: 1080px;
+  }
+  .header__wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .header__lang-img.flag-32 {
     display: none;
@@ -701,6 +711,9 @@ body * {
   .sidebar__item-content {
     padding-top: 16px;
   }
+  .sidebar__item:before {
+    left: -17px;
+  }
   .program-btn {
     padding: 12px;
     justify-content: space-around;
@@ -742,7 +755,7 @@ body * {
     width: 368px;
     height: 90px;
     position: absolute;
-    left: -11px;
+    left: 0;
     bottom: -96px;
     background-image: url("../../assets/images/HD_Btn_help-21.svg");
   }
