@@ -88,22 +88,43 @@ handleColorChange(
   "active-red-child-up"
 );
 
-function displayScreenSize() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const screenSizeDiv = document.getElementById("screenSize");
-  screenSizeDiv.textContent = `Ширина: ${width}px, Высота: ${height}px`;
+// function displayScreenSize() {
+//   const width = window.innerWidth;
+//   const height = window.innerHeight;
+//   const screenSizeDiv = document.getElementById("screenSize");
+//   screenSizeDiv.textContent = `Ширина: ${width}px, Высота: ${height}px`;
 
-  // Пример условий для медиазапросов
-  if (width <= 1080) {
-    console.log("Экран меньше или равен 1080px");
+//   // Пример условий для медиазапросов
+//   if (width <= 1080) {
+//     console.log("Экран меньше или равен 1080px");
+//   } else {
+//     console.log("Экран больше 1080px");
+//   }
+// }
+
+function displayScreenResolution() {
+  // Get the pixel density
+  const dpi = window.devicePixelRatio * 96; // Convert to dpi (assuming 96 dpi is the standard)
+
+  // Get the resolution as a string
+  const resolution = `${Math.round(dpi)} dpi`;
+
+  // Find the screenSize div
+  const screenSizeDiv = document.getElementById("screenSize");
+
+  // Set the text content to resolution
+  screenSizeDiv.textContent = `Разрешение: ${resolution}`;
+
+  // Example conditions for media queries
+  if (dpi <= 2032) {
+    console.log("Экран меньше или равен 2032 dpi");
   } else {
-    console.log("Экран больше 1080px");
+    console.log("Экран больше 2032 dpi");
   }
 }
 
 // Выводим размеры экрана при загрузке
-displayScreenSize();
+displayScreenResolution();
 
 // Обновляем размеры экрана при изменении размера окна
 window.addEventListener("resize", displayScreenSize);
