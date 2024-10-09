@@ -599,12 +599,12 @@ body * {
 } */
 
 @media screen and (max-width: 1080px)   {
-  .sidebar {
-    display: none;
-  }
-  .gap-large {
-    display: none;
-  }
+.sidebar {
+  display: none;
+}
+.gap-large {
+  display: none;
+}
    
 .header__logo.logo--desktop {
   display: none;
