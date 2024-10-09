@@ -1,0 +1,57 @@
+:root {
+  --color-pink: #ff3f6d;
+  --color-purple: #8246ff;
+  --color-red: #ff0303;
+  --color-avocado-green: #7fe409;
+  --color-grass-green: #00e577;
+  --color-cobalt-blue: #3498db;
+  --color-cadmium-blue: #1e5dff;
+  --color-blue1: #0092e4;
+  --color-grey: #8d8d8d;
+  --color-grey-4: #2d2d2d;
+  --color-yelloow: #ffeb3c;
+
+  --btn-wrapper-gradient-blue: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    #0092e4 100%
+  );
+  --btn-wrapper-gradient-green: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    #00e577 100%
+  );
+
+  --btn-height-bg: 115px;
+
+  --black: #000;
+  --white: #fff;
+
+  --btn-wrapper-padding: 5px;
+  --btn-padding-1: 12px 15px 17px 15px;
+  --btn-padding-2: 15px 20px;
+
+  --btn-box-shadow-blue: 0px 5px 10px 0px rgba(0, 160, 228, 0.5);
+
+  --border-radius-1-wrapper: 20px;
+  --border-radius-1-inner: 15px;
+
+  --border-1: 2px solid var(--black);
+
+  --text-uppercase: uppercase;
+
+  /* fonts */
+  --font-weight-black: 900;
+  --font-weight-bold: 700;
+  --font-weight-normal: 500;
+
+  --font-size-20: 20px;
+  --font-size-25: 25px;
+  --font-size-28: 28px;
+  --font-size-30: 30px;
+  --font-size-35: 35px;
+  --font-size-45: 45px;
+  --font-size-85: 85px;
+  --font-size-270: 270px;
+  --font-size-350: 350px;
+}
