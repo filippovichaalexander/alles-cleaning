@@ -182,7 +182,7 @@ body * {
   background-image: url("../../assets/images/Backgr_time.svg");
 }
 .btn__price {
-  display: none;
+  display: block;
   position: absolute;
   top: 153px;
   right: 0;
@@ -259,7 +259,7 @@ body * {
 .price__text-img.price__text-img--mobile {
   display: none;
   width: 155%;
-  bottom: -36px;
+  bottom: -83px;
 }
 .price__text {
   color: var(--white);
@@ -599,19 +599,19 @@ body * {
 } */
 
 @media screen and (max-width: 1080px)   {
-.sidebar {
-  display: none;
-}
-.gap-large {
-  display: none;
-}
-   
-.header__logo.logo--desktop {
-  display: none;
-} 
-.header__logo.logo--mobile {
-  display: block;
-} 
+  .sidebar {
+    display: none;
+  }
+  .gap-large {
+    display: none;
+  }
+    
+  .header__logo.logo--desktop {
+    display: none;
+  } 
+  .header__logo.logo--mobile {
+    display: block;
+  } 
   .programs {
     width: 100%;
   }
@@ -668,9 +668,9 @@ body * {
     height: 258px;
     background-image: url("../../assets/images/Panel_time-tab.svg");
   }
-  .btn__price {
-    display: block;
-  }
+  /* .btn__price {
+    display: none;
+  } */
   .price__date-time {
     color: var(--color-avocado-green);
   }
