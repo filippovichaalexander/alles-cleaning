@@ -355,7 +355,7 @@ body * {
   display: flex;
   flex: auto;
   align-items: center;
-  height: var(--btn-height-bg);
+  height: 125px;
   padding: var(--btn-wrapper-padding);
   border-radius: var(--border-radius-1-wrapper);
   box-shadow: var(--btn-box-shadow-green);
@@ -368,7 +368,7 @@ body * {
   width: 100%;
   display: flex;
   align-items: center;
-  height: var(--btn-height-bg);
+  height: 125px;
   padding: var(--btn-wrapper-padding);
   border-radius: var(--border-radius-1-wrapper);
   box-shadow: var(--btn-box-shadow-green);
@@ -379,7 +379,7 @@ body * {
 }
 .btn-wrapper {
   /* min-width: 490px; */
-  height: var(--btn-height-bg);
+  height: 125px;
   display: inline-block;
   padding: var(--btn-wrapper-padding);
   border-radius: var(--border-radius-1-wrapper);
@@ -422,6 +422,8 @@ body * {
 }
 .btn-green {
   background-image: url("../../assets/images/btn-green-md-bg.svg");
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .btn-blue-light {
   background-image: url("../../assets/images/btn-blue-light-md-bg.svg");
@@ -527,8 +529,10 @@ body * {
   background-image: url("../../assets/images/btn-blue-light-md2-bg.svg");
 }
 .container {
-  padding: 0 50px;
-  
+  padding: 0 50px; 
+}
+.header__container {
+  padding: 0 30px;
 }
 .container-main {
   max-width: 1440px;
@@ -630,9 +634,11 @@ body * {
   }
   .price__text {
     font-size: var(--font-size-270);
+    margin-top: 70px;
   }
   .price__inner {
     padding-top: 232px;
+    align-items: flex-end;
   }
   .date__btn-top {
     height: 200px;
@@ -663,16 +669,19 @@ body * {
     padding: 25px 3px 124px 25px;
   }
   .price__date {
-    top: -24px;
-    width: 155px;
-    height: 258px;
-    background-image: url("../../assets/images/Panel_time-tab.svg");
+    /* width: 155px;
+    height: 258px; */
+    /* background-image: url("../../assets/images/Panel_time-tab.svg"); */
+    top: 50px;
   }
-  /* .btn__price {
+  .btn__price {
     display: none;
-  } */
+  }
   .price__date-time {
     color: var(--color-avocado-green);
+  }
+  .btn__check {
+    display: none;
   }
   .btn__consultant {
     margin-left: -20px;
@@ -699,5 +708,6 @@ body * {
   
   .price__text-img.price__text-img--mobile {
     display: block;
+    bottom: -123px;
   }
 }
