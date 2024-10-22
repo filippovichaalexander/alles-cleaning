@@ -252,13 +252,30 @@ body * {
 .btn__exchange-21:active {
   background-image: url("../../assets/images/exchange-hd-32-active.svg");
 }
-.btn__check {
+/* .btn__check {
   width: 135px;
   height: 150px;
   background-image: url("../../assets/images/Btn_check.svg");
 }
 .btn__check:active {
   background-image: url("../../assets/images/btn__check_active.svg");
+} */
+.btn__check.btn__check-32 {
+  width: 135px;
+  height: 150px;
+  background-image: url("../../assets/images/Btn_check.svg");
+}
+.btn__check-32:active {
+  background-image: url("../../assets/images/btn__check_active.svg");
+}
+.btn__check.btn__check-21 {
+  display: none;
+  width: 100px;
+  height: 112px;
+  background-image: url("../../assets/images/Btn_check-fhd.svg");
+}
+.btn__check-21:active {
+  background-image: url("../../assets/images/btn__check_active-fhd.svg");
 }
 .price__text-wrapper {
   height: 100%;
@@ -723,9 +740,9 @@ body * {
   .price__date-comment {
     font-size: 19px;
   }
-  .btn__check {
+  /* .btn__check {
     display: none;
-  }
+  } */
   .programs {
     width: 72%;
   }
@@ -782,9 +799,11 @@ body * {
   }
   .btn-type-double {
     height: 94px;
+    border-radius: 12px;
   }
   .btn-type-triple {
     height: 94px;
+    border-radius: 12px;
   }
   .program-32 {
     display: none;
@@ -830,6 +849,12 @@ body * {
     display: none;
   }
   .btn__exchange.btn__exchange-21 {
+    display: block;
+  }
+  .btn__check.btn__check-32 {
+    display: none;
+  }
+  .btn__check.btn__check-21 {
     display: block;
   }
   /* .btn__main-text-wrapper img {
