@@ -20,6 +20,10 @@
   font-style: normal;
 }
 
+body {
+  position: relative;
+  background-color: #000;
+}
 body * {
   font-family: "Plumb", sans-serif;
   font-style: normal;
@@ -316,6 +320,8 @@ body * {
 }
 /* Footer */
 .footer {
+  position: absolute;
+  bottom: 0;
   max-width: 1440px;
   height: 121px;
   background: radial-gradient(
@@ -603,6 +609,11 @@ body * {
 } */
 
 @media screen and (max-width: 1080px)   {
+  body {
+    height: 1920px;
+    min-height: 1920px;
+    max-height: 1920px;
+  }
   .sidebar {
     display: none;
   }
