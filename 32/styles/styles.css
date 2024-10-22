@@ -487,9 +487,11 @@ body * {
 }
 .btn-blue-dark {
   background-image: url("../../assets/images/btn-blue-dark-md-bg.svg");
+  background-size: 104%;
 }
 .btn-purple {
   background-image: url("../../assets/images/btn-purple-md-bg.svg");
+  background-size: 104%;
 }
 .btn-sm {
   width: 115px;
@@ -621,7 +623,7 @@ body * {
 .sidebar__item:before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -24px;
   top: 0;
   width: 6px;
   height: 110px;
@@ -770,7 +772,7 @@ body * {
     padding-top: 16px;
   }
   .sidebar__item:before {
-    left: -17px;
+    left: -18px;
     width: 4px;
     height: 82px;
   }
