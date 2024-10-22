@@ -624,7 +624,7 @@ body * {
   left: -25px;
   top: 0;
   width: 6px;
-  height: 120px;
+  height: 110px;
   background-color: var(--color-blue1);
 }
 .sidebar__item-title {
@@ -771,6 +771,8 @@ body * {
   }
   .sidebar__item:before {
     left: -17px;
+    width: 4px;
+    height: 82px;
   }
   .program-btn {
     padding: 12px;
