@@ -435,7 +435,7 @@ body * {
   height: 125px;
   display: inline-block;
   padding: var(--btn-wrapper-padding);
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: var(--btn-box-shadow-green);
 }
 .btn-wrapper--green {
@@ -816,6 +816,7 @@ body * {
   .btn-wrapper {
     height: 94px;
     padding: 4px;
+    border-radius: 15px;
   }
   .btn-type-double {
     height: 94px;
