@@ -527,6 +527,7 @@ body * {
   color: #000;
 }
 .btn__main-text-sm {
+  display: block;
   color: #000;
   font-size: var(--font-size-35);
   font-weight: var(--font-weight-bold);
@@ -850,7 +851,7 @@ body * {
     display: block;
   }
   .btn__main-text-sm {
-    font-size: 27px;
+    font-size: 35px;
   }
   .btn__consultant {
     width: 368px;
