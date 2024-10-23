@@ -103,3 +103,50 @@ handleColorChange(
 // }
 
 // window.addEventListener("resize", displayScreenSize);
+
+// обработка клика по кнопке
+// Создаем WebSocket соединение
+const socket = new WebSocket("ws://localhost:8080");
+
+// Обработчик события открытия соединения
+socket.onopen = () => {
+  console.log("WebSocket connection opened");
+};
+
+// Обработчик события получения сообщения
+socket.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+
+  // Если сервер сообщает об успешной смене программы
+  if (data.success) {
+    // Находим все кнопки программ
+    const programBtns = document.querySelectorAll(".program-btn");
+
+    // Удаляем класс active у всех кнопок
+    programBtns.forEach((btn) => {
+      btn.classList.remove("program-button-active");
+    });
+
+    // Находим кнопку с новой активной программой и добавляем ей класс active
+    const newActiveBtn = document.querySelector(
+      `.program-btn.${data.newActiveProgram}`
+    );
+    newActiveBtn.classList.add("program-button-active");
+  } else {
+    // Если смена программы не удалась, выводим сообщение об ошибке
+    console.error("Failed to change program:", data.error);
+  }
+};
+
+// Обработчик события закрытия соединения
+socket.onclose = () => {
+  console.log("WebSocket connection closed");
+};
+
+// Функция для отправки сообщения на сервер о смене программы
+function changeProgram(programId) {
+  socket.send(JSON.stringify({ action: "changeProgram", programId }));
+}
+
+// Пример использования функции changeProgram
+changeProgram("new-program-id");

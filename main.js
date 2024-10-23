@@ -1,25 +1,25 @@
-// const lightBlueChildren = document.querySelectorAll(".active-light-blue")
+// Все кнопки с программами
+const programBtns = document.querySelectorAll(".program-btn");
 
-// lightBlueChildren.forEach((child) => {
-//   child.addEventListener("mousedown", function () {
-//     this.parentElement.style.background = "#0092e4"
-//   })
-//   child.addEventListener("mouseup", function () {
-//     this.parentElement.style.backgroundImage = `linear-gradient(
-//         180deg,
-//         rgba(0, 0, 0, 0.6) 0%,
-//         rgba(0, 160, 228, 1) 100%
-//       )`
-//   })
-// })
-
-function handleColorChange(className, downColor, upColor, childDown, childUp) {
+const handleColorChange = (
+  className,
+  downColor,
+  upColor,
+  childDown,
+  childUp
+) => {
   const children = document.querySelectorAll(`.${className}`);
   children.forEach((child) => {
     child.addEventListener("touchstart", function () {
       this.parentElement.style.background = downColor;
       child.classList.remove(childUp);
       child.classList.add(childDown);
+
+      programBtns.forEach((btn) => {
+        btn.classList.remove("program-button-active");
+      });
+
+      this.classList.add("program-button-active");
     });
     child.addEventListener("touchend", function () {
       this.parentElement.style.backgroundImage = `linear-gradient(
@@ -36,7 +36,7 @@ function handleColorChange(className, downColor, upColor, childDown, childUp) {
       child.classList.add(childUp);
     });
   });
-}
+};
 
 handleColorChange(
   "active-light-blue",
@@ -102,29 +102,4 @@ handleColorChange(
 //   }
 // }
 
-function displayScreenResolution() {
-  // Get the pixel density
-  const dpi = window.devicePixelRatio * 96; // Convert to dpi (assuming 96 dpi is the standard)
-
-  // Get the resolution as a string
-  const resolution = `${Math.round(dpi)} dpi`;
-
-  // Find the screenSize div
-  const screenSizeDiv = document.getElementById("screenSize");
-
-  // Set the text content to resolution
-  screenSizeDiv.textContent = `Разрешение: ${resolution}`;
-
-  // Example conditions for media queries
-  if (dpi <= 2032) {
-    console.log("Экран меньше или равен 2032 dpi");
-  } else {
-    console.log("Экран больше 2032 dpi");
-  }
-}
-
-// Выводим размеры экрана при загрузке
-displayScreenResolution();
-
-// Обновляем размеры экрана при изменении размера окна
-window.addEventListener("resize", displayScreenSize);
+// window.addEventListener("resize", displayScreenSize);
