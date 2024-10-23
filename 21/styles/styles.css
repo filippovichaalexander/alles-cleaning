@@ -262,8 +262,8 @@ body * {
 
 .price__text-img.price__text-img--mobile {
   display: none;
-  width: 155%;
-  bottom: 32px;
+  width: 65%;
+    bottom: 6px;
 }
 .price__text {
   color: var(--white);
@@ -647,7 +647,7 @@ body * {
   }
   .price__text {
     font-size: var(--font-size-270);
-    /* margin-top: 70px; */
+    margin-top: -12px;
   }
   .price__inner {
     padding-top: 152px;
