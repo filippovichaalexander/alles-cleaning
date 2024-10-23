@@ -102,29 +102,4 @@ handleColorChange(
 //   }
 // }
 
-function displayScreenResolution() {
-  // Get the pixel density
-  const dpi = window.devicePixelRatio * 96; // Convert to dpi (assuming 96 dpi is the standard)
-
-  // Get the resolution as a string
-  const resolution = `${Math.round(dpi)} dpi`;
-
-  // Find the screenSize div
-  const screenSizeDiv = document.getElementById("screenSize");
-
-  // Set the text content to resolution
-  screenSizeDiv.textContent = `Разрешение: ${resolution}`;
-
-  // Example conditions for media queries
-  if (dpi <= 2032) {
-    console.log("Экран меньше или равен 2032 dpi");
-  } else {
-    console.log("Экран больше 2032 dpi");
-  }
-}
-
-// Выводим размеры экрана при загрузке
-displayScreenResolution();
-
-// Обновляем размеры экрана при изменении размера окна
-window.addEventListener("resize", displayScreenSize);
+// window.addEventListener("resize", displayScreenSize);
