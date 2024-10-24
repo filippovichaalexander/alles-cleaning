@@ -657,7 +657,7 @@ body * {
 }
 .sidebar__item-title-top {
   font-size: 35px;
-  line-height: 1.1;
+  line-height: 1;
 }
 .sidebar__item-title-bottom {
   font-size: 30px;
@@ -789,7 +789,7 @@ body * {
   }
   .sidebar__item-title-bottom {
     font-size: 22px;
-    line-height: 1.35;
+    line-height: 1.15;
   }
   .sidebar__item-content {
     font-size: 15px;
@@ -851,7 +851,7 @@ body * {
     display: block;
   }
   .btn__main-text-sm {
-    font-size: 35px;
+    font-size: 27px;
   }
   .btn__consultant {
     width: 368px;
