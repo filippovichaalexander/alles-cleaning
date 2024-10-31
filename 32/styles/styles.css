@@ -382,7 +382,7 @@ body * {
   background-image: url("../../assets/images/Btn_stop32.svg");
   background-repeat: no-repeat;
 }
-.btn__time:active {
+.btn__time-active {
   background-image: url("../../assets/images/Btn_stop_desktop_active.svg");
 }
 .btn-type-single {
@@ -418,7 +418,6 @@ body * {
   margin-bottom: 35px;
 }
 .btn-wrapper {
-  */
   height: 125px;
   display: inline-block;
   padding: var(--btn-wrapper-padding);
@@ -830,7 +829,7 @@ body * {
     bottom: -87px;
     background-image: url("../../assets/images/HD_Btn_stop-21.svg");
   }
-  .btn__time:active {
+  .btn__time-active {
     background-image: url("../../assets/images/HD_Btn_stop-21-active.svg");
   }
   .header__logo.logo--desktop {
@@ -859,7 +858,7 @@ body * {
   }
 
 }
-/* screen-size 
+/* screen-size
   .screen-size {
   position: absolute;
   top: 0;
