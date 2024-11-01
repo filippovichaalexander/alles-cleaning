@@ -194,12 +194,12 @@ body * {
   background-image: url("../../assets/images/Backgr_time.svg");
 }
 .btn__price {
-  display: none;
+  display: block;
   position: absolute;
-  top: 153px;
+  top: 143px;
   right: 0;
-  width: 135px;
-  height: 150px;
+  width: 100px;
+  height: 112px;
   background-image: url("../../assets/images/Btn_price.svg");
 }
 .btn__price:active {
