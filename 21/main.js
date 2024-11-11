@@ -91,32 +91,32 @@
 // Все кнопки с программами
 const programBtns = document.querySelectorAll(".program-btn");
 
-// Установка WebSocket-соединения
-const socket = new WebSocket("ws://your-server.com/websocket");
+// // Установка WebSocket-соединения
+// const socket = new WebSocket("ws://your-server.com/websocket");
 
-// Обработчик открытия соединения
-socket.addEventListener("open", () => {
-  console.log("WebSocket connection established");
-});
+// // Обработчик открытия соединения
+// socket.addEventListener("open", () => {
+//   console.log("WebSocket connection established");
+// });
 
-// Обработчик получения сообщения от сервера
-socket.addEventListener("message", (event) => {
-  const response = JSON.parse(event.data);
-  if (response.success) {
-    // Удаление класса "program-button-active" со всех кнопок
-    programBtns.forEach((btn) => {
-      btn.classList.remove("program-button-active");
-    });
+// // Обработчик получения сообщения от сервера
+// socket.addEventListener("message", (event) => {
+//   const response = JSON.parse(event.data);
+//   if (response.success) {
+//     // Удаление класса "program-button-active" со всех кнопок
+//     programBtns.forEach((btn) => {
+//       btn.classList.remove("program-button-active");
+//     });
 
-    // Добавление класса "program-button-active" на кнопку, по которой кликнули
-    const clickedBtn = document.querySelector(
-      `.program-btn.${response.program}` // response.program - уникальный класс каждой кнопки, в ответе от сервера или можно по клику вешать класс на фронте 'pending', далее по какому-нибудь статичному ответу от сервера этой кнопке вешать ещё один класс 'active'
-    );
-    clickedBtn.classList.add("program-button-active");
-  } else {
-    console.error("Error changing program:", response.error);
-  }
-});
+//     // Добавление класса "program-button-active" на кнопку, по которой кликнули
+//     const clickedBtn = document.querySelector(
+//       `.program-btn.${response.program}` // response.program - уникальный класс каждой кнопки, в ответе от сервера или можно по клику вешать класс на фронте 'pending', далее по какому-нибудь статичному ответу от сервера этой кнопке вешать ещё один класс 'active'
+//     );
+//     clickedBtn.classList.add("program-button-active");
+//   } else {
+//     console.error("Error changing program:", response.error);
+//   }
+// });
 
 const handleColorChange = (
   className,
@@ -132,10 +132,10 @@ const handleColorChange = (
       child.classList.remove(childUp);
       child.classList.add(childDown);
 
-      // Отправка события на сервер через WebSocket
-      socket.send(
-        JSON.stringify({ action: "changeProgram", program: className })
-      );
+      // // Отправка события на сервер через WebSocket
+      // socket.send(
+      //   JSON.stringify({ action: "changeProgram", program: className })
+      // );
     });
     child.addEventListener("touchend", function () {
       this.parentElement.style.backgroundImage = `linear-gradient(
